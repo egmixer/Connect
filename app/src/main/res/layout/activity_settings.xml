@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/app_bar_layout" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <Button
+        android:id="@+id/edit_profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+        android:background="#00000000"
+        android:drawableStart="@drawable/ic_edit"
+        android:paddingBottom="10dp"
+        android:paddingEnd="100dp"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"
+        android:text="@string/edit_profile"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/delete_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_profile_btn"
+        android:layout_alignStart="@+id/edit_profile_btn"
+        android:layout_below="@+id/edit_profile_btn"
+        android:background="#00000000"
+        android:drawableStart="@drawable/ic_delete"
+        android:paddingBottom="10dp"
+        android:paddingEnd="100dp"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"
+        android:text="@string/delete_account"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorPrimary" />
+
+
+</RelativeLayout>
+
+
